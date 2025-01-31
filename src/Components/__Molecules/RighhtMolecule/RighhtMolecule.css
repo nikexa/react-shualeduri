@@ -70,3 +70,14 @@ button{
     display: flex;
     gap: 20px;
 }
+.DivForInput{
+    display: flex;
+}
+.PError{
+    font-family: Space Grotesk;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15.31px;
+    color: #FF5050;
+    margin-bottom: 10px;
+}
