@@ -1,0 +1,123 @@
+.left-molecule{
+    width: 483px;
+    background-image: url(../../IMAGES/Background-Color.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cards{
+    width: 541px;
+    height: 527px;
+    top: 187px;
+    left: 164px;  
+    position: relative;
+}
+.topCardIMG{
+    box-shadow: 0px 39px 60px 0px #00000024;
+    position: absolute;
+}
+.bottomCardIMG{
+    width: 447px;
+    height: 245px;
+    position: absolute;
+    top: 282px;
+    left: 95px;
+    box-shadow: 0px 39px 60px 0px #00000024;
+}
+.ovals{
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    left: 30px;
+}
+.CardInformations{
+    width: 447px;
+    height: 245px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 27px;
+}
+.CardNumberDiv{
+    width: 447px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.CardNumber{
+    position: absolute;
+    font-family: Space Grotesk;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 35.73px;
+    letter-spacing: 3.422222137451172px;
+    color: white;
+}
+.CardHolderDiv {
+    width: 380px;
+    height: 18px;    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.CardNameDiv{
+    width: 50px;
+    height: 18px;
+}
+.CardName{
+    position: absolute;
+    font-family: Space Grotesk;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.86px;
+    letter-spacing: 2px;
+    color: white;
+}
+.Data {
+    width: 50px;
+    height: 18px;
+    display: flex;
+}
+.CardMonth{
+    color: white;
+    font-family: Space Grotesk;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.86px;
+    letter-spacing: 2px;
+}
+.dashh{
+    color: white;
+    font-family: Space Grotesk;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.86px;
+    letter-spacing: 2px;
+}
+.CardYear{
+    color: white;
+    font-family: Space Grotesk;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.86px;
+    letter-spacing: 2px;
+}
+.bottomCard{
+    width: 447px;
+    height: 245px;
+    margin-top: 37px;
+    margin-left: 95px;
+}
+.cvc{
+    position: absolute;
+    margin-top: 112px;
+    margin-left: 360px;
+    font-family: Space Grotesk;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.86px;
+    letter-spacing: 2px;
+    color: white;
+}

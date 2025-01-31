@@ -1,0 +1,72 @@
+.right-molecule{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    width: 381px;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    width: 381px;
+    height: 45px;
+    gap: 0px;
+    border-radius: 8px;
+    border: 1px solid #DFDEE0;
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22.97px;
+    text-align: left;
+    outline: none;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+label{
+    font-family: Space Grotesk;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15.31px;
+    letter-spacing: 2px;
+    text-align: left;    
+    color: #21092F;
+    margin-bottom: 10px;
+}
+button{
+    width: 381px;
+    height: 53px;
+    border-radius: 8px;
+    border: 0px;
+    background-color: #21092F;
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22.97px;
+    color: white;
+}
+#month{
+    width: 80px;
+    height: 45px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+#year{
+    width: 80px;
+    height: 45px;
+    border-radius: 8px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#cvc{
+    width: 191px;
+    height: 45px;
+    top: 24px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.RightRagac{
+    display: flex;
+    gap: 20px;
+}
