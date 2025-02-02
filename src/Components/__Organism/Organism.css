@@ -24,3 +24,41 @@
     margin-top: 30px;
     cursor: pointer;
 }
+.ConfirmBtn{
+    width: 381px;
+    height: 53px;
+    border-radius: 8px;
+    border: 0px;
+    background-color: #21092F;
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22.97px;
+    color: white;
+
+}
+@media screen and (max-width:1400px) {
+    .ragaca{
+        align-items: end;
+        margin-right: 0px;
+    }
+    .ConfirmBtn{
+        margin-right: 100px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .organism{
+        flex-direction: column;
+    }
+    .ConfirmBtn{
+        margin: 0;
+    }
+    .ragaca{
+        align-items: center;
+        justify-content: start;
+        margin-top: 100px;
+    }
+    .ConfirmBtn{
+        width: 330px;
+    }
+}

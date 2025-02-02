@@ -121,3 +121,98 @@
     letter-spacing: 2px;
     color: white;
 }
+@media screen and (max-width:1200px) {
+    .left-molecule{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 240px;
+    }
+    .cards{
+        width: 375px;
+        height: 240px;
+        top: 0px;
+        left: 0;
+    }
+    .bottomCardIMG{
+        width: 286px;
+        height: 157px;
+        top: 32px;
+        left: 73px;
+        z-index: 0;
+    }
+    .topCardIMG{
+        width: 286px;
+        height: 157px;
+        top: 126px;
+        left: 16px;
+        z-index: 1;
+    }
+    .ovals{
+        width: 54px;
+        height: 30px;
+        top: 150px;
+        left: 40px;   
+    }
+    .cvc{
+        margin: 0;
+        margin-top: -183px;
+        margin-left: 300px;
+        position: relative;
+        z-index: 2;
+        font-family: Space Grotesk;
+        font-size: 9px;
+        font-weight: 500;
+        width: 10px;
+    }
+    .CardInformations{
+        align-items: center;
+        width: 280px;
+        position: relative;
+        z-index: 2;
+        margin-top: 40px;
+    }
+    .CardNumberDiv{
+        width: 290px;
+        margin: 0;
+        padding-left: 40px;
+        padding-top: 0px;
+        padding-bottom: 20px;
+        display: block;
+    }
+    .CardNumber{
+        font-family: Space Grotesk;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .CardHolderDiv{
+        width: 270px;
+        padding-top: 20px;
+        padding-left: 20px;
+        margin-left: 30px;
+    }
+    .CardName{
+        font-family: Space Grotesk;
+        font-size: 9px;
+        font-weight: 500;
+    }
+    .CardMonth{
+        font-family: Space Grotesk;
+        font-size: 9px;
+        font-weight: 500;
+    }
+    .dashh{
+        font-family: Space Grotesk;
+        font-size: 9px;
+        font-weight: 500;
+    }
+    .CardYear{
+        font-family: Space Grotesk;
+        font-size: 9px;
+        font-weight: 500;
+    }
+    .bottomCard{
+        margin: 0;
+        width: 100px;
+    }
+}

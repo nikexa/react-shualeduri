@@ -34,19 +34,6 @@ label{
     color: #21092F;
     margin-bottom: 10px;
 }
-button{
-    width: 381px;
-    height: 53px;
-    border-radius: 8px;
-    border: 0px;
-    background-color: #21092F;
-    font-family: Space Grotesk;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 22.97px;
-    color: white;
-    cursor: pointer;
-}
 #month{
     width: 80px;
     height: 45px;
@@ -81,4 +68,35 @@ button{
     line-height: 15.31px;
     color: #FF5050;
     margin-bottom: 10px;
+}
+@media screen and (max-width:1400px) {
+    .right-molecule{
+        justify-content: end;
+        margin-right: 100px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .right-molecule{
+        width: 100%;
+        margin: 0;
+        justify-content: center;
+    }
+    .form{
+        width: 330px;
+    }
+    input{
+        width: 330px;
+    }
+    #month{
+        width: 72px;
+    }
+    #year{
+        width: 72px;
+    }
+    #cvc{
+        width: 164px;
+    }
+    .PError{
+        font-size: 10px;
+    }
 }

@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-input/mask": "^2.0.4",
     "jquery": "^3.7.1",
     "jquery-mask-plugin": "^1.14.16",
     "react": "^18.3.1",

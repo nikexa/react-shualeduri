@@ -14,6 +14,7 @@ const Organism = () => {
   const [month,setMonth]=useState("00")
   const [MonthrError,setMonthrError]=useState("")
   const [year,setYear]=useState("00")
+  const [YearError,SetYearError]=useState("")
   const [cvc,setCvc]=useState("000")
   const [CvcError,setCvcError]=useState("")
   const [thanks,setThanks]=useState(false)
@@ -25,16 +26,19 @@ const Organism = () => {
     let isValid=true;
     
     if(name.trim().length<5 || name==="JANE APPLESEED"){
-      setNameError("Can’t be less then 5 or blank")
+      setNameError("Can’t be blank")
       isValid=false;
     }
     if(number.length<16 || number==="0000 0000 0000 0000"){
       setNumberError("Must be 16 digits")
       isValid=false;
     }
-    if(month==="00" || year==="00"){
+    if(month==="00"){
       setMonthrError("Cant be blank")
       isValid=false;
+    }
+    if(year==="00"){
+      SetYearError("a")
     }
     if(cvc=="000" || cvc.length<3){
       setCvcError("Can’t be blank or less then 3")
@@ -56,14 +60,15 @@ const Organism = () => {
     setNumberError("")
     setMonthrError("")
     setCvcError("")
+    SetYearError("")
   }
 
   return (
     <div className="organism">
       <LeftMolecule name={name} number={number} month={month} year={year} cvc={cvc}/>
       <div className="ragaca">
-      {thanks?<Thanks/>:<RighhtMolecule setName={setName} setNumber={setNumber} setMonth={setMonth} setYear={setYear} setCvc={setCvc} NameError={NameError} NumberError={NumberError} MonthrError={MonthrError} CvcError={CvcError}/>}
-      {thanks?<button onClick={thanksBtn} className='thanksBtn'>Continue</button>:<button onClick={handleBtn}>Confirm</button>}
+      {thanks?<Thanks/>:<RighhtMolecule setName={setName} setNumber={setNumber} setMonth={setMonth} setYear={setYear} setCvc={setCvc} NameError={NameError} NumberError={NumberError} MonthrError={MonthrError} CvcError={CvcError} YearError={YearError}/>}
+      {thanks?<button onClick={thanksBtn} className='thanksBtn'>Continue</button>:<button className='ConfirmBtn' onClick={handleBtn}>Confirm</button>}
       </div>
     </div>
   )
