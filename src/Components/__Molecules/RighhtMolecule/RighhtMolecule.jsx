@@ -63,6 +63,8 @@ const RighhtMolecule = ({setName,setNumber,setMonth,setYear ,setCvc,NameError,Nu
                 setCvc(cvc)
             }
         }
+
+        
   return (
     <div className="right-molecule">
         <form className='form' action="form">

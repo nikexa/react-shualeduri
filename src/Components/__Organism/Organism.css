@@ -11,3 +11,16 @@
     justify-content: center;
     align-items: center;
 }
+.ragaca .thanksBtn{
+    width: 381px;
+    height: 53px;
+    border: 0px;
+    border-radius: 8px;
+    background-color: #21092F;
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    margin-top: 30px;
+    cursor: pointer;
+}

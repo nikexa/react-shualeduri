@@ -1,0 +1,25 @@
+.Thanks{
+    width: 381px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.Thanks img{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+.Thanks .mainText{
+    font-family: Space Grotesk;
+    font-size: 28px;
+    font-weight: 500;
+    color: #21092F;
+}
+.Thanks .secondary{
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-weight: 500;
+    color: #8F8694;
+}

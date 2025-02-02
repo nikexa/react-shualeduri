@@ -45,6 +45,7 @@ button{
     font-weight: 500;
     line-height: 22.97px;
     color: white;
+    cursor: pointer;
 }
 #month{
     width: 80px;
