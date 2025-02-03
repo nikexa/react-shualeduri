@@ -49,6 +49,7 @@
 @media screen and (max-width:1200px) {
     .organism{
         flex-direction: column;
+        height: 300px;
     }
     .ConfirmBtn{
         margin: 0;

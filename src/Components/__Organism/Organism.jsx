@@ -25,25 +25,40 @@ const Organism = () => {
   const handleBtn=()=>{
     let isValid=true;
     
-    if(name.trim().length<5 || name==="JANE APPLESEED"){
+    if(name.trim().length<1 || name==="JANE APPLESEED"){
       setNameError("Can’t be blank")
       isValid=false;
+    }
+    else{
+      setNameError("")
     }
     if(number.length<16 || number==="0000 0000 0000 0000"){
       setNumberError("Must be 16 digits")
       isValid=false;
     }
+    else{
+      setNumberError("")
+    }
     if(month==="00"){
       setMonthrError("Cant be blank")
       isValid=false;
+    }
+    else{
+      setMonthrError("")
     }
     if(year==="00"){
       SetYearError("a")
       isValid=false;
     }
+    else{
+      SetYearError("")
+    }
     if(cvc=="000" || cvc.length<3){
       setCvcError("Can’t be blank or less then 3")
       isValid=false;
+    }
+    else{
+      setCvcError("")
     }
     if(isValid){
       setThanks(true)
