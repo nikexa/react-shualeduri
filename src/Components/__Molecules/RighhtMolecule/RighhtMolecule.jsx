@@ -1,5 +1,6 @@
 import React from 'react'
 import './RighhtMolecule.css'
+import InputMask from "react-input-mask";
 const RighhtMolecule = ({setName,setNumber,setMonth,setYear ,setCvc,NameError,NumberError,MonthrError,CvcError,YearError}) => {
     let NameValidation=/^[A-Z\s]+$/
     let secondvalidation=/([a-z])\d([a-z])(.?)\d([a-z])\d/
@@ -70,7 +71,32 @@ const RighhtMolecule = ({setName,setNumber,setMonth,setYear ,setCvc,NameError,Nu
             {NameError?<input onChange={(e) => handleName(e) } style={{marginBottom:"10px",border:"1px solid #FF5050"}} id='name' maxLength={25} type="text" placeholder='e.g. Jane Appleseed' />:<input onChange={(e) => handleName(e) } id='name' maxLength={25} type="text" placeholder='e.g. Jane Appleseed' />}
             <p className='PError'>{NameError}</p>
             <label htmlFor="number">Card Number</label>
-            {NumberError?<input onChange={(e) => handleNumber(e)}  style={{marginBottom:"10px",border:"1px solid #FF5050"}} id='number' maxLength={16} type="text" placeholder='e.g. 1234 5678 9123 0000' />:<input onChange={(e) => handleNumber(e)} id='number' maxLength={16} type="text" placeholder='e.g. 1234 5678 9123 0000' />}
+            {NumberError ? (
+    <InputMask
+    mask="9999 9999 9999 9999"
+    onChange={(e) => handleNumber(e)}
+    maskChar=""
+    type="text"
+    id="number"
+    name="cardNumber"
+    style={{ marginBottom: "10px", border: "1px solid #FF5050" }}
+    placeholder="e.g. 1234 5678 9123 0000"
+    maxLength={19}
+    required
+  />
+) :         
+<InputMask
+mask="9999 9999 9999 9999"
+onChange={(e) => handleNumber(e)}
+maskChar=""
+type="text"
+id="number"
+name="cardNumber"
+placeholder="e.g. 1234 5678 9123 0000"
+maxLength={19}
+required
+
+/>}
             <p className='PError'>{NumberError}</p>
 
             <div className="RightRagac">
