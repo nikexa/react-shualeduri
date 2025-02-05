@@ -3,15 +3,15 @@ import './RighhtMolecule.css'
 import InputMask from "react-input-mask";
 const RighhtMolecule = ({setName,setNumber,setMonth,setYear ,setCvc,NameError,NumberError,MonthrError,CvcError,YearError}) => {
     let NameValidation=/^[A-Z\s]+$/
-    let secondvalidation=/([a-z])\d([a-z])(.?)\d([a-z])\d/
     let NumberValidation = /^[0-9\s]*$/;
     let MMvalidation =/^(0[1-9]|1[0-2])$/
     let YYvalidation=/^(0[1-9]|[1-9][0-9])$/
     let cvcValidation=/^\d+$/
+    let nameSecondValidation=/\b[a-zA-ZÀ-ÿ]+\s[A-ZÀ-ÿ][a-zA-ZÀ-ÿ'-]{2,}\b/
 
     const handleName=(e)=> {
         let name = e.target.value.toUpperCase();
-        if (NameValidation.test(name)) {
+        if (NameValidation.test(name) && nameSecondValidation.test(name)) {
           setName(name);
         }
         if(name.length===0){
